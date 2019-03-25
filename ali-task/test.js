@@ -4,9 +4,13 @@ let buttonElement = document.getElementById('btn');
 
 let inputValue = inputElement.value;
 
+//Log value entered in the first field in the console
 // buttonElement.onclick = function () {
 //     console.log(inputElement.value);
 // }
+
+//Log value entered in the first field in another field
+//This is not working
 buttonElement.onclick = function () {
-   let outputValue = outputElement.value;
+outputElement.innerHTML = inputValue;
 }
